@@ -1,6 +1,6 @@
 package pe.ask.creditfast.model.utils.gateways;
 
-public interface LogExecutionGateway {
+public interface LoggableGateway {
     void trace(String message, Object... args);
     void info(String message, Object... args);
     void warn(String message, Object... args);

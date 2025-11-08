@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface LogExecution {
+public @interface Loggable {
     boolean logArgs() default true;
     boolean logResult() default true;
     boolean logTime() default true;
