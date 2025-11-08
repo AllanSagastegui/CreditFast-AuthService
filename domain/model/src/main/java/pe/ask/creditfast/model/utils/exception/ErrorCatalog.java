@@ -3,7 +3,6 @@ package pe.ask.creditfast.model.utils.exception;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.time.LocalDateTime;
 import java.util.Map;
 
 @Getter
@@ -22,6 +21,13 @@ public enum ErrorCatalog {
             "The role you specified does not exist. Please check and try again.",
             404,
             Map.of("role", "The specified role does not exist.")
+    ),
+    INVALID_CREDENTIALS(
+            "AUTH_INVALID_CREDENTIALS",
+            "Invalid Credentials",
+            "The credentials you provided are incorrect. Please try again",
+            401,
+            Map.of("credentials", "Invalid email or password")
     )
 
     ;

@@ -13,6 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class Token {
+    private UUID id;
     private String accessToken;
     private String refreshToken;
     private String tokenType;
